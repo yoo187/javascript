@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="../JQuery/JQuery3.7.1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="mainpage.html">Home Page</a></li>
+            <li><a href="HTML/overzicht.html">Overzicht</a></li>
+            <li><a href="HTML/detailpagina.html">Details</a></li>
+            <li><a href="HTML/beheerpagina.html">Beheerpagina</a></li>
+        </ul>
+    </header>
+    
+
+    <h1>De Hip-Hop in de jaren 90</h1>
+
+    <div id="blog-posts">
+        <div class="blog-post">
+            <h2>De Gouden Jaren van Hip-Hop</h2>
+            <p>De jaren 90 waren een tijdperk van ongekende groei en innovatie voor de hip-hopmuziek. Met artiesten als Tupac Shakur, The Notorious B.I.G., en Nas die de scene domineerden, werden de jaren 90 algemeen beschouwd als de gouden jaren van hip-hop. De muziek van deze periode omarmde sociale kwesties, politieke statements en persoonlijke verhalen, waardoor het een krachtig platform werd voor expressie en activisme.</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/tupacc.jpg" height="250" alt="Tupac">
+                    <div class="bio-container">
+                        <div class="artist-bio" id="tupac-bio">
+                            <p>Tupac Shakur, ook bekend als 2Pac, was een invloedrijke Amerikaanse rapper en acteur. Hij wordt beschouwd als een van de grootste rappers aller tijden. Tupac werd geboren op 16 juni 1971 in New York City en begon zijn carrière in de jaren 80 als lid van de groep Digital Underground. Hij bracht verschillende succesvolle solo-albums uit en was ook actief als acteur in films als "Juice" en "Poetic Justice". Tupac's leven werd helaas vroegtijdig beëindigd toen hij op 13 september 1996 werd neergeschoten en stierf aan de gevolgen van zijn verwondingen.</p>
+                        </div>
+                        <button class="bio-btn" data-bio="tupac">Biografie</button>
+                        <audio controls>
+                            <source src="mp3/2Pac.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/big.jpg" height="250" alt="Notorious B.I.G">
+                    <div class="bio-container">
+                        <div class="artist-bio" id="biggie-bio">
+                            <p>The Notorious B.I.G., ook bekend als Biggie Smalls, was een invloedrijke Amerikaanse rapper uit Brooklyn, New York. Hij wordt beschouwd als een van de beste en meest invloedrijke rappers aller tijden. Biggie brak door met zijn debuutalbum "Ready to Die" in 1994, en zijn kenmerkende flow en storytelling-stijl maakten hem al snel een legende in de hip-hopgemeenschap. Helaas werd zijn leven ook vroegtijdig beëindigd toen hij op 9 maart 1997 werd neergeschoten en stierf aan zijn verwondingen.</p>
+                        </div>
+                        <button class="bio-btn" data-bio="biggie">Biografie</button>
+                        <audio controls>
+                            <source src="mp3/BIG.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/nas.jpg" height="250" alt="Nas">
+                    <div class="bio-container">
+                        <div class="artist-bio" id="nas-bio">
+                            <p>Nas, ook bekend als Nasir Jones, is een legendarische rapper uit Queens, New York. Hij staat bekend om zijn lyrische vaardigheid en zijn vermogen om complexe verhalen te vertellen door middel van zijn muziek. Nas brak door met zijn debuutalbum "Illmatic" in 1994, dat algemeen wordt beschouwd als een van de beste rapalbums aller tijden. Hij heeft sindsdien een indrukwekkende carrière gehad en wordt vaak genoemd als een van de grootste rappers aller tijden.</p>
+                        </div>
+                        <button class="bio-btn" data-bio="nas">Biografie</button>
+                        <audio controls>
+                            <source src="mp3/Nas.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Behoud alle andere blogposts -->
+        <div class="blog-post">
+            <h2>Iconische Albums en Tracks</h2>
+            <p>De jaren 90 brachten ook een aantal van de meest iconische albums en tracks voort die de hip-hopcultuur hebben gevormd. Albums zoals "The Chronic" van Dr. Dre, "Illmatic" van Nas, en "Ready to Die" van The Notorious B.I.G. worden nog steeds beschouwd als klassiekers binnen het genre. Tracks zoals "California Love" van Tupac Shakur en "Juicy" van The Notorious B.I.G. blijven anthems die de tand des tijds hebben doorstaan en nog steeds worden gedraaid op feesten en evenementen over de hele wereld.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/illmatic.jpg" class="img-fluid d-block album-cover" height="250" alt="Illmatic Cover" data-album="Illmatic">
+                    <p><strong>Album:</strong> Illmatic</p>
+                    <button class="btn btn-primary show-tracks" data-album="Illmatic">Toon Tracks</button>
+                    <ul class="list-group tracks-list" style="display: none;">
+                        <li class="list-group-item">The Genesis</li>
+                        <li class="list-group-item">N.Y. State of Mind</li>
+                        <li class="list-group-item">Life's a Bitch</li>
+                        <li class="list-group-item">The World Is Yours</li>
+                        <li class="list-group-item">Halftime</li>
+                        <li class="list-group-item">Memory Lane (Sittin' in da Park)</li>
+                        <li class="list-group-item">One Love</li>
+                        <li class="list-group-item">One Time 4 Your Mind</li>
+                        <li class="list-group-item">Represent</li>
+                        <li class="list-group-item">It Ain't Hard to Tell</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/readytodie.jpg" class="img-fluid d-block album-cover" height="250" alt="Ready to Die Cover" data-album="Ready to Die">
+                    <p><strong>Album:</strong> Ready to Die</p>
+                    <button class="btn btn-primary show-tracks" data-album="Ready to Die">Toon Tracks</button>
+                    <ul class="list-group tracks-list" style="display: none;">
+                        <li class="list-group-item">Intro</li>
+                        <li class="list-group-item">Things Done Changed</li>
+                        <li class="list-group-item">Gimme the Loot</li>
+                        <li class="list-group-item">Machine Gun Funk</li>
+                        <li class="list-group-item">Warning</li>
+                        <li class="list-group-item">Ready to Die</li>
+                        <!-- Add more tracks as needed -->
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/thechronic.jpg" class="img-fluid d-block album-cover" height="250" alt="The Chronic Cover" data-album="The Chronic">
+                    <p><strong>Album:</strong> The Chronic</p>
+                    <button class="btn btn-primary show-tracks" data-album="The Chronic">Toon Tracks</button>
+                    <ul class="list-group tracks-list" style="display: none;">
+                        <li class="list-group-item">The Chronic (Intro)</li>
+                        <li class="list-group-item">Fuck wit Dre Day (And Everybody's Celebratin')</li>
+                        <li class="list-group-item">Let Me Ride</li>
+                        <li class="list-group-item">The Day the Niggaz Took Over</li>
+                        <li class="list-group-item">Nuthin' but a "G" Thang</li>
+                        <li class="list-group-item">Deeez Nuuuts</li>
+                        <!-- Add more tracks as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <h2>Mode en Cultuur</h2>
+            <p>Naast de muziek speelde ook mode een grote rol in de hip-hopscene van de jaren 90. Baggy jeans, oversized T-shirts, en baseballpetten waren kenmerkend voor de hip-hopstijl van die tijd. Daarnaast had de hip-hopcultuur een enorme invloed op de straatcultuur, kunst en zelfs taalgebruik. Het was een periode van creativiteit en zelfexpressie, waarbij jongeren uit verschillende achtergronden zich verbonden voelden door hun liefde voor hip-hop.</p>
+            <img class="outfits" src="img/outfits.jpg" alt="outfits">
+            <img class="outfits" src="img/breakdance.jpg" alt="breakdance">
+            <img class="outfits" src="img/graffiti-la.jpg" alt="graffiti">
+            <div class="text-center">
+                <button class="btn-primary" onclick="showPreviousImage()">Vorige</button>
+                <button class="btn-primary" onclick="showNextImage()">Volgende</button>
+            </div>
+        </div>
+        <div class="blog-post">
+            <h2>Invloed op de Samenleving</h2>
+            <p>De invloed van hip-hop in de jaren 90 reikte verder dan alleen de muziek- en modewereld. Het diende als een stem voor de stemlozen, een uitlaatklep voor onderdrukte gemeenschappen, en een platform voor het bespreken van maatschappelijke kwesties. Artiesten gebruikten hun platform om te pleiten voor sociale rechtvaardigheid, raciale gelijkheid en het einde van geweld in de gemeenschap. De jaren 90 waren een tijd van empowerment en activisme binnen de hip-hopgemeenschap.</p>
+        </div>
+        <div class="blog-post">
+            <h2>Legacy en Voortzetting</h2>
+            <p>Hoewel de jaren 90 inmiddels lang achter ons liggen, blijft de erfenis van die tijd voortleven in de hip-hopcultuur van vandaag. Artiesten blijven putten uit de esthetiek en de geluiden van die periode, terwijl ze tegelijkertijd nieuwe grenzen verleggen en hun eigen stempel drukken op het genre. De jaren 90 mogen dan voorbij zijn, maar de invloed ervan zal altijd voelbaar blijven in de wereld van hip-hop.</p>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Mijn Blog. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script-albums.js"></script>
+    <script src="script-outfits.js"></script>
+    <script src="script-link.js"></script>
+    <script src="script-plugin.js"></script>
+    <script src="script-ajax.js"></script>
+
+
+</body>
+</html>

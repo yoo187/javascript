@@ -1,0 +1,178 @@
+header {
+    height: 150px; /* Aangepaste hoogte om inhoud te passen */
+    /* background-color: #726E60; */
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem; /* Toegevoegde padding voor betere ruimte */
+    
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+} 
+
+ul {
+    list-style: none;
+    padding: 1rem ; /* Toegevoegde padding voor betere ruimte */
+    text-align: center; /* Centreer de lijstitems op kleine schermen */
+
+    padding: 1rem;
+
+    display: flex; /* Maak een flex-container */
+    justify-content: center; /* Centreer de lijstitems horizontaal */
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    /* display: block; */ /* Verwijder deze regel */
+    height: auto;
+    width: auto;
+    padding: 10px; /* Verhoog padding voor betere aanraakinteractie */
+    background-color: #726E60;
+    color: white;
+    margin-bottom: 5px;
+    margin-right: 5px; /* Voeg een rechtermarge toe tussen de lijstitems */
+
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px; /* Afgeronde hoeken */
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white; /* Tekstkleur */
+    padding: 5px 10px; /* Padding */
+    border: none; /* Geen rand */
+    cursor: pointer;
+}
+
+.active {
+
+    font-weight: bold; /* Vetgedrukte tekst voor actieve link */
+}
+
+
+
+body {
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h1{
+    background-color: #82735C;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3{
+    background-color: #82735C;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h2{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+    margin: 1rem;
+    padding: 1remS;
+}
+
+img {
+    margin: 0.7rem;
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+.artist-bio {
+    display: none;
+}
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bio-btn {
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px; /* Afgeronde hoeken */
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white; /* Tekstkleur */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Geen rand */
+    cursor: pointer;
+}
+.bio-btn:hover {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.col-lg-4,
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white; /* Tekstkleur */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Geen rand */
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.outfits {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%; /* Je kunt deze waarde aanpassen aan je voorkeur */
+    height: auto;
+}
+
+.outfits:nth-child(n+2) {
+    display: none;
+}
+
+.btn-primary {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white; /* Tekstkleur */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Geen rand */
+    cursor: pointer;
+    border-radius: 10px; /* Toegevoegde afronding */
+    margin: 0.2rem;
+}
+
+.btn-primary:hover {
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px; /* Toegevoegde afronding */
+}
